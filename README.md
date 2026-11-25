@@ -66,7 +66,7 @@ node scripts/setup.mjs --folder "<LaTeX 文件夹>" --url "<Overleaf 项目网�
 ### 验证情况
 
 - 用模拟服务器测试了合并、冲突、删除、图片替换等情况：`node tests/simulate.js`。
-- 在 Windows 和一个自建 Overleaf 上完成过检查和首次同步。网页改动的自动拉取目前只在模拟环境中验证过。
+- 在 Windows 和一个自建 Overleaf 上完成过检查、首次同步，以及网页改动的自动拉取。按行合并和冲突处理目前只在模拟环境中验证过。
 - 未在 overleaf.com、macOS、Linux 上测试。首次使用请先跑只读检查。
 
 ## English
@@ -109,7 +109,7 @@ The extension's interface is in Chinese.
 ### What has been tested
 
 - Merging, conflicts, deletion and image replacement against a simulated server: `node tests/simulate.js`.
-- Check and first sync on Windows with one self-hosted Overleaf. Automatic pull of web edits has so far been verified only in simulation.
+- Check, first sync and automatic pull of web edits on Windows with one self-hosted Overleaf. Line-level merging and conflict handling have so far been verified only in simulation.
 - Not tested on overleaf.com, macOS or Linux. Run the read-only check first.
 
 ## License
