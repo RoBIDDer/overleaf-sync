@@ -1,0 +1,40 @@
+{
+  "name": "overleaf-paper-sync",
+  "displayName": "Overleaf 论文同步",
+  "description": "Two-way, incremental sync between a local LaTeX folder and an Overleaf project, through the Overleaf Workshop session.",
+  "version": "1.0.0",
+  "publisher": "paper-tools",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "main": "./extension.js",
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
+  "activationEvents": [
+    "workspaceContains:.overleaf/bisync.json"
+  ],
+  "extensionDependencies": [
+    "iamhyc.overleaf-workshop"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": false
+    }
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "overleaf-paper-sync.sync",
+        "title": "同步",
+        "category": "Overleaf"
+      },
+      {
+        "command": "overleaf-paper-sync.check",
+        "title": "检查差异（只读）",
+        "category": "Overleaf"
+      }
+    ]
+  }
+}
